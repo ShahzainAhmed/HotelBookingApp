@@ -5,5 +5,5 @@
 
 ### Preview:
 <div align="center">
-  <video src="" width=100/>
+  <video src="https://github.com/ShahzainAhmed/HotelBookingApp/assets/59369881/798dcdc3-28c9-40b5-93fe-91512c7c68f1" width=100/>
 <div/>
