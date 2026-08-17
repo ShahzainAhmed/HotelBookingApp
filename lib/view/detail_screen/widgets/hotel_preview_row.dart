@@ -12,11 +12,6 @@ class HotelPreviewRow extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: Get.width,
-      padding: EdgeInsets.symmetric(vertical: 5.h, horizontal: 5.w),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20.r),
-        border: Border.all(color: AppColors.kVeryLighGreyColor),
-      ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -27,9 +22,9 @@ class HotelPreviewRow extends StatelessWidget {
           ])
             Container(
               height: 70.h,
-              width: 95.w,
+              width: 100.w,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20.r),
+                borderRadius: BorderRadius.circular(12.r),
                 image: DecorationImage(
                   image: AssetImage(imagePath),
                   fit: BoxFit.cover,

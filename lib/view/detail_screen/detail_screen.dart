@@ -29,7 +29,7 @@ class _DetailScreenState extends State<DetailScreen> {
       appBar: AppBar(
         surfaceTintColor: Colors.transparent,
         centerTitle: true,
-        title: Text(widget.cardsModel.title, style: AppTypography.kMedium16),
+        title: Text(widget.cardsModel.title, style: AppTypography.kBold14),
         leading: IconButton(
           iconSize: 20.r,
           onPressed: () async {
