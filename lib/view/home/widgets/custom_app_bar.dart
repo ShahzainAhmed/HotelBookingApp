@@ -11,7 +11,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       centerTitle: false,
-      surfaceTintColor: Colors.transparent,
+      surfaceTintColor: AppColors.kTransparentColor,
       title: Row(
         children: [
           Column(
@@ -20,11 +20,12 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                 height: 40.h,
                 width: 40.w,
                 decoration: BoxDecoration(
-                  color: AppColors.kWhiteColor,
-                  shape: BoxShape.circle,
-                  border: Border.all(color: AppColors.kVeryLighGreyColor),
-                ),
-                child: Image.asset(ImageAssets.kProfile2),
+                    color: AppColors.kWhiteColor,
+                    shape: BoxShape.circle,
+                    border: Border.all(color: AppColors.kVeryLighGreyColor),
+                    image: const DecorationImage(
+                      image: AssetImage(ImageAssets.kProfile2),
+                    )),
               ),
             ],
           ),
