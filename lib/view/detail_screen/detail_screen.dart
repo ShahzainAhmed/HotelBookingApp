@@ -145,7 +145,7 @@ class _DetailScreenState extends State<DetailScreen> {
       bottomSheet: FadeInUp(
         animate: animate,
         delay: const Duration(milliseconds: 1100),
-        child: PrimaryButton(),
+        child: const PrimaryButton(),
       ),
     );
   }

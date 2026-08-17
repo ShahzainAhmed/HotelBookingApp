@@ -28,7 +28,7 @@ class CustomSearchBar extends StatelessWidget {
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(14.r),
               borderSide: BorderSide(
-                color: AppColors.kBlackColor.withOpacity(0.1),
+                color: AppColors.kBlackColor.withValues(alpha: 0.1),
               ), // Change idle border color here
             ),
           ),

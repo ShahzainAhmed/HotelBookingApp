@@ -3,14 +3,13 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:hotel_booking_app/resources/assets/image_assets.dart';
-import 'package:hotel_booking_app/resources/colors/app_colors.dart';
 
 class HotelPreviewRow extends StatelessWidget {
   const HotelPreviewRow({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: Get.width,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,

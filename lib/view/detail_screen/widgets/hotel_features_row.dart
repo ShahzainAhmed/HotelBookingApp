@@ -18,7 +18,7 @@ class HotelFeaturesRow extends StatelessWidget {
         border: Border.all(color: AppColors.kVeryLighGreyColor),
         boxShadow: [
           BoxShadow(
-            color: AppColors.kLightGreyColor.withOpacity(0.1),
+            color: AppColors.kLightGreyColor.withValues(alpha: 0.1),
             blurRadius: 1,
             offset: const Offset(1, 1),
           ),
@@ -43,7 +43,7 @@ class HotelFeaturesRow extends StatelessWidget {
 
             VerticalDivider(
               thickness: 1,
-              color: AppColors.kLightGreyColor.withOpacity(0.2),
+              color: AppColors.kLightGreyColor.withValues(alpha: 0.2),
             ),
 
             // Breakfast
@@ -61,7 +61,7 @@ class HotelFeaturesRow extends StatelessWidget {
 
             VerticalDivider(
               thickness: 1,
-              color: AppColors.kLightGreyColor.withOpacity(0.2),
+              color: AppColors.kLightGreyColor.withValues(alpha: 0.2),
             ),
 
             // Rating

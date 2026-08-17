@@ -29,7 +29,7 @@ class HotelInfoCard extends StatelessWidget {
                   boxShadow: [
                     BoxShadow(
                         color: const Color.fromARGB(255, 82, 78, 78)
-                            .withOpacity(0.2),
+                            .withValues(alpha: 0.2),
                         blurRadius: 2,
                         offset: const Offset(1, 1))
                   ]),

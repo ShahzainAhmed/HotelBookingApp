@@ -20,7 +20,7 @@ class HotelImage extends StatelessWidget {
         borderRadius: BorderRadius.circular(10.r),
         boxShadow: [
           BoxShadow(
-            color: AppColors.kLightGreyColor.withOpacity(0.2),
+            color: AppColors.kLightGreyColor.withValues(alpha: 0.2),
             blurRadius: 2,
             offset: const Offset(1, 2),
           ),
