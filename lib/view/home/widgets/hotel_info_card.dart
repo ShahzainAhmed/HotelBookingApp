@@ -108,7 +108,7 @@ class HotelInfoCard extends StatelessWidget {
                             Expanded(
                               child: Text(
                                 cardsModel.title,
-                                style: AppTypography.kExtraBold12,
+                                style: AppTypography.kBold12,
                                 overflow: TextOverflow.ellipsis,
                               ),
                             ),
@@ -116,7 +116,7 @@ class HotelInfoCard extends StatelessWidget {
                                 size: 18, color: AppColors.kYellowColor),
                             SizedBox(width: 5.w),
                             Text(cardsModel.rating,
-                                style: AppTypography.kExtraBold12)
+                                style: AppTypography.kBold12)
                           ],
                         ),
                         SizedBox(height: 5.h),
@@ -133,7 +133,7 @@ class HotelInfoCard extends StatelessWidget {
                             children: [
                               TextSpan(
                                 text: cardsModel.price,
-                                style: AppTypography.kExtraBold12
+                                style: AppTypography.kBold12
                                     .copyWith(color: AppColors.kBlackColor),
                               ),
                               TextSpan(

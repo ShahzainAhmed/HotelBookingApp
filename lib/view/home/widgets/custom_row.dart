@@ -20,7 +20,7 @@ class CustomRow extends StatelessWidget {
             animatedTexts: [
               WavyAnimatedText(
                 title,
-                textStyle: AppTypography.kExtraBold14
+                textStyle: AppTypography.kBold14
                     .copyWith(letterSpacing: 0.0, color: AppColors.kBlackColor),
                 speed: const Duration(milliseconds: 150),
               ),

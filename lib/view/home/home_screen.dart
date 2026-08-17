@@ -24,7 +24,7 @@ class HomeScreen extends StatelessWidget {
           children: [
             SizedBox(height: 20.h),
             const CustomSearchBar(),
-            SizedBox(height: 10.h),
+            SizedBox(height: 20.h),
             const CustomRow(title: "Nearby your location"),
             SizedBox(
               height: 260.h,
