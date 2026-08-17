@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: 'Hotel Booking App',
           theme: ThemeData(
+            scaffoldBackgroundColor: AppColors.kWhiteColor,
             appBarTheme: const AppBarTheme(
               backgroundColor: Colors.transparent,
               elevation: 0,

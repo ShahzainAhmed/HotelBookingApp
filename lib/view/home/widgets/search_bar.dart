@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hotel_booking_app/resources/colors/app_colors.dart';
@@ -15,19 +16,19 @@ class CustomSearchBar extends StatelessWidget {
         child: TextField(
           decoration: InputDecoration(
             contentPadding: EdgeInsets.symmetric(horizontal: 20.w),
-            prefixIcon:
-                const Icon(Icons.search, color: AppColors.kLightGreyColor),
+            prefixIcon: const Icon(CupertinoIcons.search,
+                color: AppColors.kLightGreyColor),
             suffixIcon: const Icon(Icons.menu, color: AppColors.kPrimaryColor),
-            hintText: "Search Hotel",
+            hintText: "Search Hotels ...",
             hintStyle: AppTypography.kMedium12
                 .copyWith(color: AppColors.kLightGreyColor),
             border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(10.r),
+              borderRadius: BorderRadius.circular(14.r),
             ),
             enabledBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(10.r),
-              borderSide: const BorderSide(
-                color: AppColors.kVeryLighGreyColor,
+              borderRadius: BorderRadius.circular(14.r),
+              borderSide: BorderSide(
+                color: AppColors.kBlackColor.withOpacity(0.1),
               ), // Change idle border color here
             ),
           ),

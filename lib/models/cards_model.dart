@@ -65,7 +65,7 @@ List cardsList = [
     image: ImageAssets.kPic5,
   ),
   CardsModel(
-    title: "Manhattan Central Suites",
+    title: "Manhattan Suites",
     subTitle: "7890 Main St. Metro City, Cosmopolis 13579",
     description:
         "Indulge in a world of opulence at our five-star hotel, where every detail is meticulously crafted to offer unparalleled luxury, exquisite cuisine, and impeccable service to our esteemed clientele.",
