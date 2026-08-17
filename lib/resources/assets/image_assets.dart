@@ -1,5 +1,6 @@
 class ImageAssets {
   static const String kProfile = 'assets/profile.png';
+  static const String kProfile2 = 'assets/Tiktok.jpg';
   static const String kPic1 = 'assets/pic1.jpg';
   static const String kPic1Small = 'assets/pic1Small.png';
   static const String kPic2 = 'assets/pic2.jpg';

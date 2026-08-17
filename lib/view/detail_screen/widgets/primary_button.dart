@@ -24,8 +24,8 @@ class PrimaryButton extends StatelessWidget {
           child: Center(
             child: Text(
               "Book Now",
-              style: AppTypography.kMedium12
-                  .copyWith(color: AppColors.kWhiteColor.withOpacity(0.8)),
+              style:
+                  AppTypography.kBold12.copyWith(color: AppColors.kWhiteColor),
             ),
           ),
         ),

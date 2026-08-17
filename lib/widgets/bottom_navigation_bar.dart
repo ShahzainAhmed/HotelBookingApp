@@ -26,9 +26,9 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
       extendBody: true,
       body: pages[_currentIndex],
       bottomNavigationBar: SizedBox(
-        height: 75.h,
+        height: 105.h,
         child: FloatingNavbar(
-          selectedBackgroundColor: Colors.transparent,
+          selectedBackgroundColor: AppColors.kTransparentColor,
           iconSize: 20.sp,
           backgroundColor: AppColors.kVeryLighGreyColor,
           borderRadius: 80.r,

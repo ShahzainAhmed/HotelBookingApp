@@ -24,7 +24,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                   shape: BoxShape.circle,
                   border: Border.all(color: AppColors.kVeryLighGreyColor),
                 ),
-                child: Image.asset(ImageAssets.kProfile),
+                child: Image.asset(ImageAssets.kProfile2),
               ),
             ],
           ),
@@ -38,6 +38,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                   color: AppColors.kLightGreyColor,
                 ),
               ),
+              SizedBox(height: 4.h),
               Row(
                 children: [
                   Icon(
@@ -53,16 +54,16 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                       underline: const SizedBox(),
                       style: AppTypography.kBold12
                           .copyWith(color: AppColors.kBlackColor),
-                      value: 'Karachi, Pakistan',
+                      value: 'New York, USA',
                       icon: const Icon(
                         Icons.keyboard_arrow_down,
                         color: AppColors.kBlackColor,
                       ),
                       onChanged: (String? newValue) {},
                       items: <String>[
-                        'Karachi, Pakistan',
-                        'Lahore, Pakistan',
-                        'Hyderabad, Pakistan',
+                        'New York, USA',
+                        'USA',
+                        'USA',
                       ].map<DropdownMenuItem<String>>((String value) {
                         return DropdownMenuItem<String>(
                           value: value,

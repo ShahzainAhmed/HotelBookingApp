@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class AppColors {
   static const kPrimaryColor = Color(0xff0B569A);
+  static const kTransparentColor = Colors.transparent;
   static const kWhiteColor = Colors.white;
   static const kBlackColor = Colors.black;
   static const kLightGreyColor = Colors.grey;

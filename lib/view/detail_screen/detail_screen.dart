@@ -25,10 +25,11 @@ class _DetailScreenState extends State<DetailScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBody: true,
       appBar: AppBar(
         surfaceTintColor: Colors.transparent,
         centerTitle: true,
-        title: Text('Detail', style: AppTypography.kExtraBold16),
+        title: Text(widget.cardsModel.title, style: AppTypography.kMedium16),
         leading: IconButton(
           iconSize: 20.r,
           onPressed: () async {
@@ -68,12 +69,21 @@ class _DetailScreenState extends State<DetailScreen> {
             SizedBox(height: 15.h),
             FadeInUp(
               animate: animate,
-              delay: const Duration(milliseconds: 500),
+              delay: const Duration(milliseconds: 600),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(widget.cardsModel.title,
-                      style: AppTypography.kExtraBold14),
+                  Expanded(
+                    child: ListTile(
+                      leading: Icon(Icons.pin_drop,
+                          color: AppColors.kPrimaryColor, size: 18.r),
+                      title: Text(
+                        widget.cardsModel.subTitle,
+                        style: AppTypography.kBold10
+                            .copyWith(color: AppColors.kLightGreyColor),
+                      ),
+                    ),
+                  ),
                   RichText(
                     text: TextSpan(
                       children: [
@@ -90,23 +100,6 @@ class _DetailScreenState extends State<DetailScreen> {
                       ],
                     ),
                   )
-                ],
-              ),
-            ),
-            SizedBox(height: 5.h),
-            FadeInUp(
-              animate: animate,
-              delay: const Duration(milliseconds: 600),
-              child: Row(
-                children: [
-                  Icon(Icons.pin_drop,
-                      color: AppColors.kPrimaryColor, size: 18.r),
-                  SizedBox(width: 10.w),
-                  Text(
-                    widget.cardsModel.subTitle,
-                    style: AppTypography.kBold10
-                        .copyWith(color: AppColors.kLightGreyColor),
-                  ),
                 ],
               ),
             ),
@@ -152,7 +145,7 @@ class _DetailScreenState extends State<DetailScreen> {
       bottomSheet: FadeInUp(
         animate: animate,
         delay: const Duration(milliseconds: 1100),
-        child: const PrimaryButton(),
+        child: PrimaryButton(),
       ),
     );
   }

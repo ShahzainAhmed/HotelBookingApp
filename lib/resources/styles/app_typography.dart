@@ -52,6 +52,9 @@ class AppTypography {
   static TextStyle kBold10 = GoogleFonts.poppins(
       fontSize: 10.sp, fontWeight: FontWeight.w600, letterSpacing: 0.0);
 
+  static TextStyle kBold11 = GoogleFonts.poppins(
+      fontSize: 11.sp, fontWeight: FontWeight.w600, letterSpacing: 0.0);
+
   static TextStyle kBold12 =
       GoogleFonts.poppins(fontSize: 12.sp, fontWeight: FontWeight.w600);
 

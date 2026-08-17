@@ -20,7 +20,7 @@ class CardsModel {
 
 List cardsList = [
   CardsModel(
-    title: "The Luxury Hotel",
+    title: "The Hudson Grand",
     subTitle: "6391 Elgin St. Celna, Deltaware 10299",
     description:
         "A hotel is a commercial establishment that provides lodging meals, and other services to guests, travelers, and tourists.",
@@ -29,7 +29,7 @@ List cardsList = [
     image: ImageAssets.kPic1,
   ),
   CardsModel(
-    title: "The Complex Hotel",
+    title: "Pacific Crest Hotel",
     subTitle: "18525 London St. Kelna, Hollenworld 86100",
     description:
         "Discover unparalleled comfort and luxury at our esteemed hotel, offering exquisite lodging, gourmet meals, and personalized services for discerning guests.",
@@ -38,7 +38,7 @@ List cardsList = [
     image: ImageAssets.kPic2,
   ),
   CardsModel(
-    title: "Tranquil Oasis Retreat",
+    title: "Riverside Park Inn",
     subTitle: "7729 Main Ave. Riverdale, Delphia 48200",
     description:
         "Experience a cozy retreat at our charming hotel, where warm hospitality meets modern amenities, ensuring a memorable stay for travelers seeking relaxation and convenience.",
@@ -47,7 +47,7 @@ List cardsList = [
     image: ImageAssets.kPic3,
   ),
   CardsModel(
-    title: "Oceanview Resort",
+    title: "Oceanview Bay Resort",
     subTitle: "301 Oakwood Dr. Maplewood, Brackenwood 71850",
     description:
         "Immerse yourself in the vibrant ambiance of our boutique hotel, where stylish accommodations, delectable cuisine, and attentive service cater to the needs of every guest.",
@@ -56,7 +56,7 @@ List cardsList = [
     image: ImageAssets.kPic4,
   ),
   CardsModel(
-    title: "Mountain Retreat Lodge",
+    title: "Aspen Ridge Lodge",
     subTitle: "4567 Summit Rd. Pine Valley, Serenity 98765",
     description:
         "Embark on a journey of discovery at our eco-friendly hotel, nestled amidst nature's beauty, providing sustainable accommodations, farm-to-table dining, and eco-conscious experiences.",
@@ -65,7 +65,7 @@ List cardsList = [
     image: ImageAssets.kPic5,
   ),
   CardsModel(
-    title: "Urban Boutique Hotel",
+    title: "Manhattan Central Suites",
     subTitle: "7890 Main St. Metro City, Cosmopolis 13579",
     description:
         "Indulge in a world of opulence at our five-star hotel, where every detail is meticulously crafted to offer unparalleled luxury, exquisite cuisine, and impeccable service to our esteemed clientele.",

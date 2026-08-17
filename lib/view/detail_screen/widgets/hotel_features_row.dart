@@ -11,9 +11,9 @@ class HotelFeaturesRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 20.h),
+      padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 10.h),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(40.r),
+        borderRadius: BorderRadius.circular(10.r),
         color: AppColors.kWhiteColor,
         border: Border.all(color: AppColors.kVeryLighGreyColor),
         boxShadow: [
@@ -24,16 +24,64 @@ class HotelFeaturesRow extends StatelessWidget {
           ),
         ],
       ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Icon(Icons.wifi, size: 20.r),
-          Text('Free WiFi', style: AppTypography.kBold12),
-          Icon(Icons.coffee_outlined, size: 20.r),
-          Text('Free Breakfast', style: AppTypography.kBold12),
-          Icon(Icons.star, color: AppColors.kYellowColor, size: 20.r),
-          Text(cardsModel.rating, style: AppTypography.kBold12),
-        ],
+      child: IntrinsicHeight(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            // WiFi
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Icon(Icons.wifi, size: 18.r),
+                SizedBox(width: 6.w),
+                Text(
+                  'Free WiFi',
+                  style: AppTypography.kBold10,
+                ),
+              ],
+            ),
+
+            VerticalDivider(
+              thickness: 1,
+              color: AppColors.kLightGreyColor.withOpacity(0.2),
+            ),
+
+            // Breakfast
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Icon(Icons.coffee_outlined, size: 18.r),
+                SizedBox(width: 6.w),
+                Text(
+                  'Free Breakfast',
+                  style: AppTypography.kBold10,
+                ),
+              ],
+            ),
+
+            VerticalDivider(
+              thickness: 1,
+              color: AppColors.kLightGreyColor.withOpacity(0.2),
+            ),
+
+            // Rating
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Icon(
+                  Icons.star,
+                  color: AppColors.kYellowColor,
+                  size: 18.r,
+                ),
+                SizedBox(width: 6.w),
+                Text(
+                  cardsModel.rating,
+                  style: AppTypography.kBold10,
+                ),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
